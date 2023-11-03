@@ -30,3 +30,8 @@ p {
 .btn.btn-ghost {
   @apply shadow-none;
 }
+
+.card {
+  background: radial-gradient(800px at 358px 226.4px, rgba(0, 0, 0, 0.08), transparent 40%);
+  box-shadow: 0 11px 14px rgba(0,0,0,.04);
+}

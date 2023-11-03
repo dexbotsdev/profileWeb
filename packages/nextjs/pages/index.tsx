@@ -1,56 +1,78 @@
 import Link from "next/link";
 import type { NextPage } from "next";
-import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { MetaHeader } from "~~/components/MetaHeader";
-
+import { BugAntIcon, MagnifyingGlassIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
+import { MetaHeader } from "~~/components/MetaHeader"; 
+import { IconBrandBinance, IconBrandTelegram, IconBrandWebflow, IconBug, IconChartArcs3, IconChartArrows, IconChartCandle, IconExchange, IconHomeInfinity, IconHomeShield, IconRobot, IconRobotFace, IconToolsKitchen3, IconTrademark, IconWebhook } from "@tabler/icons-react";
+import { IconRobotOff } from "@tabler/icons-react";
 const Home: NextPage = () => {
   return (
     <>
       <MetaHeader />
-      <div className="flex items-center flex-col flex-grow pt-10">
+      <div className="flex items-center flex-col flex-grow pt-3">
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
-          </h1>
+            <span className="block text-4xl font-bold">DexBots</span>
+          </h1> 
           <p className="text-center text-lg">
-            Get started by editing{" "}
+            Crypto is a Trustless Environment, and 97.9% are Scams{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/nextjs/pages/index.tsx
+              I build genuine Bots to make Passive Income a Reality
             </code>
-          </p>
+          </p> 
           <p className="text-center text-lg">
-            Edit your smart contract{" "}
+            I build bots and also teach people how to develop bots for{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
-            </code>{" "}
-            in{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/hardhat/contracts
+               Telegram, Dex and Cex
             </code>
+            {/* {" "}
+            Proceed With{" "}
+            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
+              caution
+            </code> */}
           </p>
         </div>
 
         <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <BugAntIcon className="h-8 w-8 fill-secondary" />
+            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs  border-t-2 border-blue-400">
+               <IconBrandTelegram className="h-8 w-8 fill-primary"  color="#009fff"/>
               <p>
-                Tinker with your smart contract using the{" "}
+                Telegram Games, Sniper and Trading Bots,Token Scanning,Analysis , Notification and Statistics Bots{" "}
                 <Link href="/debug" passHref className="link">
-                  Debug Contract
+                  With Web Enablement
                 </Link>{" "}
-                tab.
+                features.
               </p>
             </div>
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
+            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs  border-b-2 border-blue-500">
+              <IconWebhook className="h-8 w-8 fill-primary" color="orange"/>
               <p>
-                Explore your local transactions with the{" "}
+                Token scanners and sniffer dapps with Honeypot checking, MemeCoin websites, clones of websites, Token cloning,{" "}
                 <Link href="/blockexplorer" passHref className="link">
-                  Block Explorer
+                  
                 </Link>{" "}
-                tab.
+                for multiple chains.
+              </p>
+            </div>
+            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs border-t-2 border-blue-400">
+              <RocketLaunchIcon className="h-8 w-8 fill-primary"  color="cyan"/>
+              <p>
+                Dex Sniper Bots, Antisweeper Bots, Presale sniper and HST Bots,Auto Trading bots with Take Profit, Stop Loss and Limit Orders{" "}
+                <Link href="/blockexplorer" passHref className="link">
+                  for Uniswap V2 and V3
+                </Link>{" "}
+                Multichain
+              </p>
+            </div>
+            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs border-b-2 border-blue-500">
+              <IconBrandBinance  className="h-8 w-8 fill-primary"  color="orange"/>
+              <p>
+                Exchange Trading Bots, Copy & Auto Trading, Grid Trading, DCA Bots, with TP,SL and Limit Orders, both spot and futures. {" "}
+                <Link href="/blockexplorer" passHref className="link">
+                  Perpetuals
+                </Link>{" "}
+                With Tradingview Connectivity.
               </p>
             </div>
           </div>
