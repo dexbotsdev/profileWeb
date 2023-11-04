@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <img src="/trade-1.svg" className="h-8 w-8 fill-primary" color="orange"/>
               <p>
                 Token scanners and sniffer dapps with Honeypot checking, MemeCoin websites, clones of websites, Token cloning,{" "}
-                <Link href="/blockexplorer" passHref className="link">
+                <Link href="/mybots" passHref className="link">
                   
                 </Link>{" "}
                 for multiple chains.
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             <img src="/sniper-sight.svg" className="h-8 w-8 fill-primary"  color="cyan"/>
               <p>
                 Dex Sniper Bots, Antisweeper Bots, Presale sniper and HST Bots,Auto Trading bots with Take Profit, Stop Loss and Limit Orders{" "}
-                <Link href="/blockexplorer" passHref className="link">
+                <Link href="/mybots" passHref className="link">
                   for Uniswap V2 and V3
                 </Link>{" "}
               </p>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             <img src="/binance-logo.svg" className="h-8 w-8 fill-primary"  color="orange"/>
               <p>
                 Exchange Trading Bots, Copy & Auto Trading, Grid Trading, DCA Bots, with TP,SL and Limit Orders, both spot and futures. {" "}
-                <Link href="/blockexplorer" passHref className="link">
+                <Link href="/mybots" passHref className="link">
                   Perpetuals
                 </Link>{" "}
                 With Tradingview .  
