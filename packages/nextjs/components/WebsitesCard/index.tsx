@@ -1,11 +1,21 @@
-import { folio } from '../../data/index';
+ import Image from "next/image";
 
 
-const WebsitesCard=(item:any)=>{
+ type SiteCard = {
+    title: string;
+    websiteUrl: string;
+    description: string; 
+    imageUrl: string;
+    botLink: string;
+    type: string;
+  };
+
+  
+const WebsitesCard=({title,websiteUrl,description,imageUrl}:SiteCard)=>{
 
     return (
         <a
-        href={item.websiteUrl}
+        href={websiteUrl}
         className="flex flex-col bg-base-100 relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8"
     >
         <span
@@ -15,16 +25,16 @@ const WebsitesCard=(item:any)=>{
         <div className="sm:flex sm:justify-between sm:gap-4">
             <div>
                 <h3 className="text-lg font-bold  sm:text-xl">
-                    {item.title}
+                    {title}
                 </h3> 
                 <p className="max-w-[40ch] text-sm ">
-            {item.description}            </p>
+            {description}            </p>
             </div>
 
             <div className="hidden sm:block sm:shrink-0">
                 <img
                     alt="Paul Clapton"
-                    src={item.imageUrl}
+                    src={imageUrl} 
                     className="h-32 w-32 rounded-lg object-cover shadow-sm"
                 />
             </div>
@@ -33,7 +43,7 @@ const WebsitesCard=(item:any)=>{
         <dl className="mt-6 flex gap-4 sm:gap-6">
             <div className="flex flex-col-reverse">
                 <dt className="text-sm font-medium ">Delivered</dt>
-                <dd className="text-xs ">Development</dd>
+                <dd className="text-xs ">Task</dd>
             </div>
 
             <div className="flex flex-col-reverse">
