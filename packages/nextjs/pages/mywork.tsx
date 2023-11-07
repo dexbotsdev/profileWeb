@@ -22,7 +22,7 @@ const MyBots: NextPage = () => {
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
 
                         {folio && folio.map((item,index) => (
-                            <WebsitesCard item={item} />  
+                            <WebsitesCard item={item}  key={index}/>  
 
                         ))}
                     </div>

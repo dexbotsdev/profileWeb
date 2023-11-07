@@ -1,7 +1,7 @@
 import { folio } from '../../data/index';
 
 
-const WebsitesCard=({item},{item:any})=>{
+const WebsitesCard=(item:any)=>{
 
     return (
         <a
