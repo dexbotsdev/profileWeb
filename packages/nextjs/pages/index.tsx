@@ -10,7 +10,9 @@ const Home: NextPage = () => {
       <MetaHeader />
       <div className="flex items-center flex-col flex-grow pt-3">
         <div className="px-5">
+          
           <h1 className="text-center mb-8">
+          <img src="/dexbotsdev2.png" alt="logo"/>
             <span className="block text-2xl mb-2">Welcome to</span>
             <span className="block text-4xl font-bold">DexBots</span>
           </h1> 

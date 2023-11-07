@@ -28,8 +28,8 @@ export const menuLinks: HeaderMenuLink[] = [
     icon: <TvIcon className="h-4 w-4" />,
   },
   {
-    label: "MyBots",
-    href: "/mybots",
+    label: "Folio",
+    href: "/mywork",
     icon: <BuildingStorefrontIcon className="h-4 w-4" />,
   },
 ];
